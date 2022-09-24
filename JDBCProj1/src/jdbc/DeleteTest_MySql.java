@@ -23,9 +23,9 @@ public class DeleteTest_MySql {
 				 endavg =sc.nextFloat();
 			}
 			//load jdbc driver s/w
-			Class.forName("com.jdbc.cj.driver.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			//Establish the connection
-			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","1998");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbcdb","root","1998");
 			//create statement obj
 			if(con!=null)
 				st =con.createStatement();
