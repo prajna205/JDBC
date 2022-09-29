@@ -6,8 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import org.postgresql.jdbc.EscapedFunctions;
-
 
 public class InSensitiveRSTest {
 	private static final String SELECT_STUDENT ="SELECT SNO,SNAME,SADDR,AVG FROM STUDENT";
